@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Base reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,10 +8,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Header with Flexbox Navigation */
+/* Flexbox Navigation */
 header {
   background-color: lightblue;
   padding: 1em 0;
@@ -19,18 +19,19 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2em;
   flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-weight: bold;
-  padding: 0.5em 1em;
+  font-size: 1.1em;
 }
 
-/* Main Grid Layout */
+/* Grid Layout */
 .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -39,12 +40,12 @@ nav a {
 }
 
 .main-content {
-  background-color: yellow;
+  background-color: #ffffcc;
   padding: 1em;
 }
 
 .sidebar {
-  background-color: pink;
+  background-color: #ffcccb;
   padding: 1em;
 }
 
@@ -55,7 +56,7 @@ footer {
   margin-top: 1em;
 }
 
-/* Responsive Design */
+/* Responsive layout */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
