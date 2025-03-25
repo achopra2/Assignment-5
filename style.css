@@ -1,0 +1,72 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+/* Header with Flexbox Navigation */
+header {
+  background-color: lightblue;
+  padding: 1em 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+
+/* Main Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+  padding: 1em;
+}
+
+.main-content {
+  background-color: yellow;
+  padding: 1em;
+}
+
+.sidebar {
+  background-color: pink;
+  padding: 1em;
+}
+
+footer {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    margin-top: 1em;
+  }
+}
